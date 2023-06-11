@@ -31,35 +31,44 @@
   width: 100%;
   background-color: black;
   color: white;
+  padding: 0 4rem;
 }
 
 .blog {
-  color: #94A3B8;
+  color: white;
+  margin-top: 2rem;
+
+}
+
+.blog>h2 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .heroHeading {
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 2.5rem;
 }
 
 .heroHeading>h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 
 .heroHeading>h2 {
   color: #94A3B8;
-  font-size: 2rem;
+  font-size: 1.25rem;
+  padding-top: 0.5rem;
 }
 
 .heroHeading>p {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 .textGradient {
 
-  background: linear-gradient(to right, #adf700 0%, #00d4ff 100%);
+  background: linear-gradient(to right, #E9F702 0%, #00d4ff 100%);
   /* Mask the color to the text, and remove the rest  */
   -webkit-background-clip: text;
   /* Make the text fill color value transparent so the masked background color comes through */
@@ -72,10 +81,6 @@
   -webkit-background-clip: text;
   /* Make the text fill color value transparent so the masked background color comes through */
   -webkit-text-fill-color: transparent;
-}
-
-.hero h2 {
-  font-size: 72px;
 }
 
 /* Media queries for responsive layout */

@@ -29,7 +29,12 @@ export default function Home() {
           <h2>I am currently building at Genpro Research, I'm interested in football, tech, and building a fast, accessible web</h2>
         </div>
         <div className={styles.blog}>
-          Recent Blogs
+          <h2>Recent Blogs</h2>
+          <div className={styles.blogCardSection}>
+            <div className={styles.blogCard}>
+
+            </div>
+          </div>
         </div>
       </section>
 
