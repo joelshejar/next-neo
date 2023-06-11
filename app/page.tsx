@@ -12,6 +12,7 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.logo}>
           <Logo />
+          <h6>Joel</h6>
         </div>
         <nav className={styles.menu}>
           <a href="#">Home</a>
