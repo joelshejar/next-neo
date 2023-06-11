@@ -1,5 +1,6 @@
 import './globals.css'
 import { Space_Grotesk } from 'next/font/google'
+import { Syne } from "next/font/google"
 
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 
@@ -52,7 +53,7 @@ export const metadata = {
   },
   // alternates: {
   //   types: {
-  //     'application/rss+xml': 'https://joelrajesh.dev/feed.xml',
+  //     'application/rss+xml': 'https://joelrajesh.dev`  /feed.xml',
   //   },
   // },
 }
@@ -64,7 +65,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={spaceGrotesk.className}>{children}</body>
+      <body className={spaceGrotesk.className}>
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
   )
 }

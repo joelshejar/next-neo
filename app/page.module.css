@@ -1,0 +1,53 @@
+.container {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  /* Add your logo image here */
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.menu a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  /* padding: 50px; */
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 600px) {
+  .container {}
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+}
