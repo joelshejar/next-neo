@@ -21,8 +21,16 @@ export default function Home() {
       </header>
 
       <section className={styles.hero}>
-        <h1 style={syne.style}>Welcome to the Website</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div className={styles.heroHeading}>
+          <h1 style={syne.style}>
+            <span className={styles.textGradient}>Frontend</span> Engineer, <span className={styles.textGradientTwo}>Footballer</span>.
+          </h1>
+          <p>You have found my place on the internet</p>
+          <h2>I am currently building at Genpro Research, I'm interested in football, tech, and building a fast, accessible web</h2>
+        </div>
+        <div className={styles.blog}>
+          Recent Blogs
+        </div>
       </section>
 
     </div>

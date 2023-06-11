@@ -27,12 +27,55 @@
 }
 
 .hero {
-  text-align: center;
-  /* padding: 50px; */
   height: 90vh;
   width: 100%;
   background-color: black;
   color: white;
+}
+
+.blog {
+  color: #94A3B8;
+}
+
+.heroHeading {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.heroHeading>h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.heroHeading>h2 {
+  color: #94A3B8;
+  font-size: 2rem;
+}
+
+.heroHeading>p {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.textGradient {
+
+  background: linear-gradient(to right, #adf700 0%, #00d4ff 100%);
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+}
+
+.textGradientTwo {
+  background: linear-gradient(to right, #6300f7 0%, #ff0038 100%);
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
+  font-size: 72px;
 }
 
 /* Media queries for responsive layout */
