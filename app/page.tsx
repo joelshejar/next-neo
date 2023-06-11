@@ -31,9 +31,33 @@ export default function Home() {
         <div className={styles.blog}>
           <h2>Recent Blogs</h2>
           <div className={styles.blogCardSection}>
-            <div className={styles.blogCard}>
-
-            </div>
+            <article className={styles.blogCard}>
+              <h4>Debouncing in Javascript</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisi
+                cing elit. Expedita fugit magnam, modi adnt, dicta nobis
+                aut? Ratione eius est laudantium molest</p>
+              <button className={styles.pushable}>
+                <span className={styles.shadow}></span>
+                <span className={styles.edge}></span>
+                <span className={styles.front}>
+                  Push me
+                </span>
+              </button>
+            </article>
+            <article className={styles.blogCard}>
+              <h4>Debouncing in Javascript</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisi
+                cing elit. Expedita fugit magnam, modi adipisci m
+                agni est rem consectetur hic veritatis incidunt, dicta nobis
+                aut? Ratione eius est laudantium molest</p>
+            </article>
+            <article className={styles.blogCard}>
+              <h4>Debouncing in Javascript</h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisi
+                cing elit. Expedita fugit magnam, modi adipisci m
+                agni est rem consectetur hic veritatis incidunt, dicta nobis
+                aut? Ratione eius est laudantium molest</p>
+            </article>
           </div>
         </div>
       </section>
