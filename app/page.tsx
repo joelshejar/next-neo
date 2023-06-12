@@ -1,3 +1,4 @@
+/* eslint react/no-unescaped-entities */
 import styles from './page.module.css'
 import Logo from "./components/logo"
 import { Syne } from "next/font/google"
