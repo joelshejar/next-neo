@@ -1,7 +1,7 @@
 import styles from './page.module.css'
 import Logo from "./components/logo"
 import { Syne } from "next/font/google"
-
+import Link from './components/link'
 const syne = Syne({
   subsets: ["latin"],
   weight: ['400', '500', '600', '700', '800']
@@ -37,13 +37,13 @@ export default function Home() {
               <p>Lorem ipsum dolor sit amet consectetur, adipisi
                 cing elit. Expedita fugit magnam, modi adnt, dicta nobis
                 aut? Ratione eius est laudantium molest</p>
-              <button className={styles.pushable}>
+              <Link href="/blog" className={styles.pushable}>
                 <span className={styles.shadow}></span>
                 <span className={styles.edge}></span>
                 <span className={styles.front}>
                   Push me
                 </span>
-              </button>
+              </Link>
             </article>
             <article className={styles.blogCard}>
               <h4>Debouncing in Javascript</h4>
