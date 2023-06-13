@@ -1,0 +1,38 @@
+---
+title: Debouncing in Javascript
+description: debouncing
+slug: debouncing-in-js
+date: Jun 14, 2023
+---
+
+By implementing debounce, we can optimize the performance of our API calls by delaying the execution of `fetchTrendingRepos` until a certain amount of time has elapsed since the last keystroke. Without debounce, calling fetchTrendingRepos on each keystroke could result in multiple unnecessary API calls and slower response times.
+
+## Here's a classic debounce implementation
+
+```js title="debounce.js"
+const debounce = (callback, wait) => {
+  let timeoutId = null;
+
+  return (...args) => {
+    clearTimeout(timeoutId);
+
+    timeoutId = setTimeout(() => {
+      callback(...args);
+    }, wait);
+  };
+};
+```
+
+Whoa, this looks very confusing, doesn't it? The simplest way to understand code is to break it down into parts.
+
+As per our understanding:
+
+1. We want to wait a certain amount before we call our callback function. We want to wait till the user finishes typing.
+2. Our debounce should _return a function_. Why? This is done to form a closure around `callback` and `wait` function parameters and the `timeoutId` variable so that their values are preserved.
+
+So we need to do a few things:
+
+1. Return a function.
+2. Schedule a timeout, based on the `wait` argument we provide. `wait` will be in milliseconds.
+3. Cancel any pre-existing timeout, as debounce can be called multiple times.
+4. When the timeout expires, we need to call our callback function and feed it whatever arguments we have, with the spread operator. Why? Because the function being returned from debounce is supposed to act exactly the same as the function being provided, except for the fact that we're limiting how often it gets called. This means that if the original function was supposed to take two parameters, the returned function should too.
